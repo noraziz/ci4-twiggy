@@ -1,0 +1,45 @@
+{
+    "name": "noraziz/ci4-twiggy",
+    "description": "Twig template engine implementation for CodeIgniter 4, forked from https://github.com/edmundask/codeigniter-twiggy.",
+    "type": "library",
+    "keywords": [
+        "codeigniter",
+        "codeigniter4",
+        "twig",
+	"library"
+    ],
+    "homepage": "https://github.com/noraziz",
+    "require": {
+        "php": ">=7.3.0",
+        "twig/twig": "^3.3.8"
+    },
+    "require-dev": {
+        "codeigniter4/framework": "^4.2",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+          "noraziz\\ci4-twiggy\\": "src"
+        } 
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "noraziz\\ci4-twiggy\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+	"post-install-cmd": [
+            "php -r \"copy('config-example.php', 'config/local.php');\""
+        ]
+    },
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nor Aziz",
+            "homepage": "https://github.com/noraziz"
+        }
+    ]
+}
