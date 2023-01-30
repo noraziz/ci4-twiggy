@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-          "noraziz\\ci4-twiggy\\": "src/CI4Twiggy/"
+          "noraziz\\ci4-twiggy\\": "src"
         } 
     },
     "autoload-dev": {
         "psr-4": {
-          "noraziz\\ci4-twiggy\\": "src/CI4Twiggy/"
+          "noraziz\\ci4-twiggy\\": "src"
         }
     },
     "scripts": {
@@ -33,6 +33,8 @@
             "php -r \"copy('config-example.php', 'config/local.php');\""
         ]
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "license": "MIT",
     "authors": [
         {
