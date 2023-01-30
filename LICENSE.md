@@ -1,6 +1,6 @@
 The MIT License
 
-Copyright (c) 2015 Kenji Suzuki <https://github.com/kenjis>
+Copyright (c) 2023 Nor Aziz <https://github.com/noraziz>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
