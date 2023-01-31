@@ -1,6 +1,6 @@
 <?php  if(!defined('BASEPATH')) exit('No direct script access allowed');
 
-namespace noraziz\ci4-twiggy\Config;
+namespace noraziz\ci4twiggy\Config;
 
 /**
  * Twiggy - Twig template engine implementation for CodeIgniter 4
