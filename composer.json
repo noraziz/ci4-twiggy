@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-          "noraziz\\ci4-twiggy\\": "src"
+          "noraziz\\ci4twiggy\\": "src"
         } 
     },
     "autoload-dev": {
         "psr-4": {
-          "noraziz\\ci4-twiggy\\": "src"
+          "noraziz\\ci4twiggy\\": "src"
         }
     },
     "scripts": {
