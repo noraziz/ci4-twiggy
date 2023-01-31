@@ -18,9 +18,9 @@
  * @copyright 			Copyright (c) 2023 Nor Aziz <tonoraziz@gmail.com>
  */
 
-namespace noraziz\ci4-twiggy;
+namespace noraziz\ci4twiggy;
 
-use noraziz\ci4-twiggy\Config\Twiggy as TwiggyConfig
+use noraziz\ci4twiggy\Config\Twiggy as TwiggyConfig
 
 class Twiggy
 {
