@@ -36,7 +36,7 @@ class Twiggy extends BaseConfig
 	| you may use *.html.twig template files and *.html.jst for js templates.
 	|
 	*/
-	public string $template_file_ext = '.html.twig';
+	public $template_file_ext = '.html.twig';
 
 
 	/*
@@ -63,7 +63,7 @@ class Twiggy extends BaseConfig
 	*/
 
 
-	public array $delimiters =
+	public $delimiters =
 	[
 		'tag_comment' 	=> array('{#', '#}'),
 		'tag_block'   	=> array('{%', '%}'),
@@ -89,7 +89,7 @@ class Twiggy extends BaseConfig
 	| can be set separately.
 	|
 	*/
-	public array $environment = [
+	public $environment = [
 		'cache'              	=> FALSE,
 		'debug'              	=> FALSE,
 		'charset'            	=> 'utf-8',
@@ -110,7 +110,7 @@ class Twiggy extends BaseConfig
 	| CodeIgniter's base directory.
 	|
 	*/
-	public string $twig_cache_dir = APPPATH . 'cache/twig/';
+	public $twig_cache_dir = APPPATH . 'cache/twig/';
 
 
 	/*
@@ -134,7 +134,7 @@ class Twiggy extends BaseConfig
 	| Also, do not forget the trailing slash!
 	|
 	*/
-	public string $themes_base_dir = 'themes/';
+	public $themes_base_dir = 'themes/';
 
 
 	/*
@@ -156,7 +156,7 @@ class Twiggy extends BaseConfig
 	| application (APPPATH) folder.
 	|
 	*/
-	public bool $include_apppath = TRUE;
+	public $include_apppath = TRUE;
 
 
 	/*
@@ -164,7 +164,7 @@ class Twiggy extends BaseConfig
 	| Default theme
 	|--------------------------------------------------------------------------
 	*/
-	public string $default_theme = 'default';
+	public $default_theme = 'default';
 
 
 	/*
@@ -172,7 +172,7 @@ class Twiggy extends BaseConfig
 	| Default layout
 	|--------------------------------------------------------------------------
 	*/
-	public string $default_layout = 'index';
+	public $default_layout = 'index';
 
 
 	/*
@@ -180,7 +180,7 @@ class Twiggy extends BaseConfig
 	| Default template
 	|--------------------------------------------------------------------------
 	*/
-	public string $default_template = 'index';
+	public $default_template = 'index';
 
 
 	/*
@@ -194,7 +194,7 @@ class Twiggy extends BaseConfig
 	| NOTE: only registered functions can be used in Twig templates. 
 	|
 	*/
-	public array $register_functions = 
+	public $register_functions = 
 	[
 
 	];
@@ -213,7 +213,7 @@ class Twiggy extends BaseConfig
 	| acceps a string (value) as a parameter and outputs a modified/new string.
 	|
 	*/
-	public array $register_filters = 
+	public $register_filters = 
 	[
 
 	];
@@ -228,5 +228,5 @@ class Twiggy extends BaseConfig
 	| variable.
 	|
 	*/
-	public string $title_separator = ' | ';
+	public $title_separator = ' | ';
 }
