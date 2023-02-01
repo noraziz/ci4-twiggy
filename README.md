@@ -1,6 +1,6 @@
 # CI4-Twiggy - Twig template engine implementation for CodeIgniter 4
 
-This library is for Codeigniter 4, forked from [twiggy](https://github.com/edmundask/codeigniter-twiggy). But, some development reference come from [ss-twig](https://github.com/kenjis/codeigniter-ss-twig).
+This library is for Codeigniter 4, forked from [twiggy](https://github.com/edmundask/codeigniter-twiggy). But, some development reference come from [ss-twig](https://github.com/kenjis/codeigniter-ss-twig) & [raizdev](https://github.com/raizdev/twig-codeigniter4).
 
 
 Twiggy is not just a simple implementation of Twig template engine for CodeIgniter. It supports themes, layouts, templates for regular apps and also for apps that use HMVC (module support).
