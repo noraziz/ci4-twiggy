@@ -17,7 +17,7 @@ namespace noraziz\ci4twiggy;
  * @category  			Libraries
  * @author    			Nor Aziz <tonoraziz@gmail.com>
  * @license   			http://www.opensource.org/licenses/MIT
- * @version   			0.1
+ * @version   			0.2
  * @copyright 			Copyright (c) 2023 Nor Aziz <tonoraziz@gmail.com>
  */
 
