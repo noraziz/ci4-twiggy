@@ -10,7 +10,7 @@ namespace noraziz\ci4twiggy\Config;
  * apps and also for apps that use HMVC (module support).
  *
  * Original Project https://github.com/edmundask/codeigniter-twiggy
- * But, some development reference come from https://github.com/kenjis/codeigniter-ss-twig
+ * But, some development reference come from https://github.com/kenjis/codeigniter-ss-twig & https://github.com/raizdev/twig-codeigniter4.
  * 
  * @package   			noraziz
  * @subpackage			ci4-twiggy
@@ -25,6 +25,17 @@ use CodeIgniter\Config\BaseConfig;
 
 class Twiggy extends BaseConfig
 {
+	/*
+	|--------------------------------------------------------------------------
+	| Debug Mode
+	|--------------------------------------------------------------------------
+	|
+	| Activate debug mode when codeigniter is in development mode.
+	|
+	*/
+	public $debug = ENVIRONMENT !== 'production';
+	
+	
 	/*
 	|--------------------------------------------------------------------------
 	| Template file extension
@@ -134,7 +145,7 @@ class Twiggy extends BaseConfig
 	| Also, do not forget the trailing slash!
 	|
 	*/
-	public $themes_base_dir = 'themes/';
+	public $themes_base_dir = 'Themes/';
 
 
 	/*
@@ -185,7 +196,7 @@ class Twiggy extends BaseConfig
 
 	/*
 	|--------------------------------------------------------------------------
-	| Auto-reigster functions
+	| Auto-register functions
 	|--------------------------------------------------------------------------
 	|
 	| Here you can list all the functions that you want Twiggy to automatically
@@ -194,15 +205,25 @@ class Twiggy extends BaseConfig
 	| NOTE: only registered functions can be used in Twig templates. 
 	|
 	*/
-	public $register_functions = 
+	public $list_functions_asis = 
 	[
-
+		'base_url',
+		'site_url'
+	];
+	
+	public $list_functions_safe = 
+	[
+		'form_open',
+		'form_close',
+		'form_error',
+		'form_hidden',
+		'set_value'
 	];
 
 
 	/*
 	|--------------------------------------------------------------------------
-	| Auto-reigster filters
+	| Auto-register filters
 	|--------------------------------------------------------------------------
 	|
 	| Much like with functions, list filters that you want Twiggy to 
@@ -213,7 +234,7 @@ class Twiggy extends BaseConfig
 	| acceps a string (value) as a parameter and outputs a modified/new string.
 	|
 	*/
-	public $register_filters = 
+	public $list_filters = 
 	[
 
 	];
