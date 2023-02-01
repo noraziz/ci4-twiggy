@@ -84,8 +84,8 @@ class Twiggy
 				/* Only add the template location if the same exists, otherwise
 				you'll need always a directory for your templates, even your module
 				won't use templates */
-				if ( is_dir($m_loc . $this->_module_name . '/' . $this->_config->themes_base_dir . $theme) )
-					$this->_template_locations[] = $m_loc . $this->_module_name . '/' . $this->_config->themes_base_dir . $theme;
+				if ( is_dir($m_loc . '/' . $this->_config->themes_base_dir . $theme) )
+					$this->_template_locations[] = $m_loc . '/' . $this->_config->themes_base_dir . $theme;
 			}
 		}
 		
